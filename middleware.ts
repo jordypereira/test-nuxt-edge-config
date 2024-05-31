@@ -1,6 +1,6 @@
 import { get } from '@vercel/edge-config';
 
-export const config = { matcher: '/welcome' };
+export const config = { matcher: '/api/welcome' };
 
 export async function middleware(request: Request): Response {
   const random = Math.random();
