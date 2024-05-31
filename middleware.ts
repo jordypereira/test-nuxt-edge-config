@@ -11,7 +11,7 @@ export async function middleware(request: Request): Response {
 
   if (showPlpHeader) {
     const url = new URL(request.url);
-    url.pathname = '/new-homepage';
+    url.pathname = '/api/welcome2';
     return Response.redirect(url);
   }
 }

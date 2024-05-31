@@ -7,6 +7,6 @@ export default defineEventHandler(event => {
   return {
     city,
     ip,
-    page: 'page1'
+    page: 'page2'
   }
 })
