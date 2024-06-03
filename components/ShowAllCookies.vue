@@ -9,7 +9,12 @@
 </template>
 
 <script lang="ts" setup>
-const allCookies = document.cookie.split(';').map(cookie => cookie.trim());
+const allCookies = ref<string[]>([])
+
+
+onMounted(() => {
+  allCookies.value = document.cookie.split(';')
+})
 </script>
 
 <style scoped>
