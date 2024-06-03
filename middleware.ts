@@ -1,6 +1,6 @@
 import { get } from '@vercel/edge-config';
 
-export const config = { matcher: ':slug' };
+export const config = { matcher: '/:slug' };
 
 export async function middleware (request: Request) {
   // Simple A/B test logic
