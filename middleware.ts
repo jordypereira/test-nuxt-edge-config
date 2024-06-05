@@ -15,10 +15,8 @@ export async function middleware (request: Request) {
   const random50Percent = random < 0.5;
   const showPlpHeader = random50Percent ? await get('greeting') : false;
   const cookieFeature = showPlpHeader ? 'greeting' : 'no-greeting';
-  const cookie = `feature=${cookieFeature}; Path=/; Max-Age=60`;
-  const cookie2 = `variant=${variant}; Path=/; HttpOnly`;
 
-  responseCookies.set('feature', cookieFeature, { maxAge: 60 });
+  responseCookies.set('feature', cookieFeature, { maxAge: 33360 });
   responseCookies.set('variant', variant, { httpOnly: true });
 
 
