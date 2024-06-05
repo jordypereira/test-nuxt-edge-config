@@ -19,7 +19,7 @@ export async function middleware (request: Request) {
   const cookieString = request.headers.get('cookie'); 
   console.log("🚀 ~ eventHandler ~ cookieString:", cookieString)
   console.log("🚀 ~ eventHandler ~ cookie:", cookie)
-  const cookieArray = cookieString ? cookieString.split(';') : [];
+  const cookieArray = [];
   console.log("🚀 ~ eventHandler ~ cookieArray:", cookieArray)
   const newCookieArray = cookieArray.filter((cookie) => {
     return !cookie.includes('feature');
