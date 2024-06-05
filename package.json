@@ -10,6 +10,7 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@edge-runtime/cookies": "^4.1.1",
     "@nuxt/eslint": "^0.3.13",
     "@vercel/edge-config": "^1.1.1",
     "nuxt": "^3.11.2",
